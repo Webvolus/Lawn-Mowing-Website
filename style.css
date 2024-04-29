@@ -1,0 +1,38 @@
+img{
+    height: 100%;
+}
+.navbar{
+    height: 300px;
+}
+.navbar-brand {
+    padding-top: 20px; /* Adjust for vertical centering */
+    height: 100%; /* Make it span the height of the navbar */
+}
+
+/* Adjusting the height of navbar links and alignment */
+@media (min-width: 768px) {
+    
+    .nav > li > a {
+        padding-top: 130px; /* Adjust for vertical centering */
+        padding-bottom: 20px; /* Adjust for vertical centering */
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    
+}
+button{
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav > li > a {
+        text-align: center;
+        background-color: white;
+        padding: 2em;
+    }
+    body{
+        padding-top: 400px;
+    }
+    
+}
