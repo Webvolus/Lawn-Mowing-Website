@@ -1,8 +1,17 @@
 img{
     height: 100%;
 }
-.navbar{
-    height: 300px;
+.lawn{
+    border-color: black;
+    background-color: #96ED89;
+}
+.lawn:hover{
+    color: white;
+    background-color: #194D33;
+}
+.lawn:active{
+    border-color: black;
+    background-color: #96ED89;
 }
 .navbar-brand {
     padding-top: 20px; /* Adjust for vertical centering */
@@ -18,6 +27,9 @@ img{
         font-size: 25px;
         text-align: center;
     }
+    .carousel-inner .item {
+        height: 40em; /* Set a fixed height for the carousel items */
+    }
     
     
 }
@@ -31,8 +43,52 @@ button{
         background-color: white;
         padding: 2em;
     }
-    body{
-        padding-top: 400px;
+    .navbar-nav {
+        background-color: #e7e7e7;
+    }
+    .carousel-inner .item {
+        height: 25em; /* Set a fixed height for the carousel items */
     }
     
+}
+#services{
+    background-color: #45BF55;
+    margin-bottom: 5%;
+    border-radius: 1em;
+}
+body{
+    background-color: #96ED89;
+}
+.panel-default{
+    background-color: #45BF55;
+    margin-bottom: 5%;
+    border-radius: 1em;
+}
+#contact{
+    background-color: #45BF55;
+    margin-bottom: 5%;
+    border-radius: 1em;
+}
+footer{
+    background-color: #4CAF50;
+    color: white; 
+    padding: 90px;
+}
+footer a{
+    font-size: 20px;
+    color: white;
+    text-decoration-line: underline
+}
+#main-jumbo{
+    background-color: #4CAF50; 
+    color: white;
+}
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel-inner .item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure images don't exceed carousel height */
+    object-fit: cover; /* Cover the entire carousel item */
 }
