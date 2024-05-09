@@ -122,16 +122,17 @@
             document.addEventListener("DOMContentLoaded", function() {
                 // Your JavaScript code here
                 if(localStorage.getItem("name")){
-                    if(localStorage.getItem("hasMowing")){
+                    if(localStorage.getItem("hasMowing") == "yes"){
                        var name = localStorage.getItem("name")
                         alert("Welcome Back " + name);
                     } else {
-                        var hasMowing = prompt("Do you currently use services from Adam's Lawn Mowing? (Yes or no)");
+                        var name = localStorage.getItem("name")
+                        var hasMowing = prompt("Hello, " + name + ", Do you currently use services from Adam's Lawn Mowing? (Yes or no)");
                         localStorage.setItem("hasMowing", hasMowing);
                         if(localStorage.getItem("hasMowing") == "yes"){
                             alert("Thank You For Using Our Services!");
                         } else {
-                            alert("Please Consider Giving us a try " + name + "." + " Any Questions? Call or Text 1(123)-456-789");
+                            alert("Please Consider Giving us a try, " + name + "." + " Got any Questions? Call or Text 1(123)-456-789");
                         }
                     }
                 } else {
