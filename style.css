@@ -28,7 +28,7 @@ img{
         text-align: center;
     }
     .carousel-inner .item {
-        height: 40em; /* Set a fixed height for the carousel items */
+        height: 30em; /* Set a fixed height for the carousel items */
     }
     
     
@@ -47,7 +47,7 @@ button{
         background-color: #e7e7e7;
     }
     .carousel-inner .item {
-        height: 25em; /* Set a fixed height for the carousel items */
+        height: 20em; /* Set a fixed height for the carousel items */
     }
     
 }
