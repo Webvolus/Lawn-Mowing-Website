@@ -4,9 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -121,29 +119,33 @@
         </div>
     </footer>
     <script>
-      if(localStorage.getItem("name")){
-        if(localStorage.getItem("hasMowing")){
-          alert("Welcome Back " + name);
-        }else{
-          var hasMowing = prompt("Do you currently use services from Adam's Lawn Mowing? (Yes or no)");
-          localStorage.setItem("hasMowing", hasMowing);
-          if(localStorage.getItem("hasMowing") == "yes"){
-            alert("Thank You For Using Our Services!");
-          }else{
-            alert("Please Consider Giving us a try " + name + "." + " Any Questions? Call or Text 1(123)-456-789");
-          }
-        }
-      }else{
-        var name = prompt("Welcome To Adams Lawn Mowing Website! Please enter your name. (we do not collect this data)");
-        localStorage.setItem("name", name);
-        var hasMowing = prompt("Do you currently use services from Adam's Lawn Mowing? (Yes or no)");
-        localStorage.setItem("hasMowing", hasMowing);
-        if(localStorage.getItem("hasMowing") == "yes"){
-            alert("Thank You For Using Our Services! " + name);
-      }else{
-        alert("Please Consider Giving us a try " + name + "." + " Any Questions? Call or Text 1(123)-456-789");
-      }
-    }
+            document.addEventListener("DOMContentLoaded", function() {
+                // Your JavaScript code here
+                if(localStorage.getItem("name")){
+                    if(localStorage.getItem("hasMowing")){
+                       var name = localStorage.getItem("name")
+                        alert("Welcome Back " + name);
+                    } else {
+                        var hasMowing = prompt("Do you currently use services from Adam's Lawn Mowing? (Yes or no)");
+                        localStorage.setItem("hasMowing", hasMowing);
+                        if(localStorage.getItem("hasMowing") == "yes"){
+                            alert("Thank You For Using Our Services!");
+                        } else {
+                            alert("Please Consider Giving us a try " + name + "." + " Any Questions? Call or Text 1(123)-456-789");
+                        }
+                    }
+                } else {
+                    var name = prompt("Welcome To Adams Lawn Mowing Website! Please enter your name. (we do not collect this data)");
+                    localStorage.setItem("name", name);
+                    var hasMowing = prompt("Do you currently use services from Adam's Lawn Mowing? (Yes or no)");
+                    localStorage.setItem("hasMowing", hasMowing);
+                    if(localStorage.getItem("hasMowing") == "yes"){
+                        alert("Thank You For Using Our Services! " + name);
+                    } else {
+                        alert("Please Consider Giving us a try " + name + "." + " Any Questions? Call or Text 1(123)-456-789");
+                    }
+                }
+            });
     </script>
     </body>
 
